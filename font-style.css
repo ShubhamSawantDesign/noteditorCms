@@ -1,0 +1,91 @@
+.note-toolbar {
+    background-color: #f8f9fa;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .toolbar {
+    display: flex;
+    align-items: center;
+  }
+  .toolbar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 2px;
+  }
+  .toolbar button i {
+    font-size: 18px;
+    color: #555;
+  }
+  .note-editing-area {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .note-editable {
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  .note-codable {
+    display: none; /* Hide the textarea */
+  }
+
+  .note-btn-group .note-btn {
+    border: 1px solid #0e0000;
+    font-size: 13px;
+    padding: 0.28rem 0.65rem;
+}
+
+.note-toolbar .toolbar .note-btn {
+    margin-right: -3px; /* Adjust the right margin */
+}
+.note-toolbar>.note-btn-group, .note-popover .popover-content>.note-btn-group {
+    margin-left: 0;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.dropdown-menu {
+    display: none; /* Hide the dropdown menu by default */
+    min-width: auto; /* Adjust width as needed */
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: absolute; /* Position the dropdown menu */
+    z-index: 1000; /* Ensure the dropdown menu appears above other content */
+}
+
+.dropdown-menu.show {
+    display: block; /* Display the dropdown menu when it has the 'show' class */
+}
+
+.dropdown-item {
+    font-size: 13px; /* Adjust font size as needed */
+    color: #333;
+    margin: 5px 0; /* Adjust margin between items */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #f8f9fa;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #e9ecef;
+}
+
+.dropdown{
+    margin-left: 10px;
+}

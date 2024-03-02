@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notepad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="font-style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+  
+      
+    <div class="note-editing-area">
+        <div class="panel-heading note-toolbar" role="toolbar">
+            <div class="toolbar">
+                <div class="note-btn-group btn-group note-font">
+                    <button class="note-btn btn btn-default btn-sm note-btn-bold" id="boldButton"><i class="fas fa-bold"></i></button>
+                    <button class="note-btn btn btn-default btn-sm note-btn-bold" id="italicButton"><i class="fas fa-italic"></i></button>
+                    <button class="note-btn btn btn-default btn-sm note-btn-bold" id="underline"><i class="fas fa-underline"></i></button>
+
+                    <div class="dropdown">
+                        <button class="note-btn btn btn-default btn-sm dropdown-toggle" type="button" id="textSizeDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Text Size
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="textSizeDropdown">
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(10)">10</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(12)">12</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(15)">15</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(18)">18</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(19)">19</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(22)">22</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(23)">23</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(25)">25</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(28)">28</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(30)">30</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(35)">35</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(36)">36</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(42)">42</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(43)">43</button>
+                            <button class="dropdown-item" type="button" onclick="changeTextSize(44)">44</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <textarea class="note-codable" aria-multiline="true"></textarea>
+        <div class="note-editable" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true" autocorrect="true" style="height: 300px;"></div>
+    </div>      
+
+
+    <!-- <div class="editor" contenteditable="true"></div> -->
+
+    <script src="editor.jqeury.js"></script>
+
+</body>
