@@ -89,3 +89,18 @@
 .dropdown{
     margin-left: 10px;
 }
+
+.custom-image {
+  width: 400px;
+  height: 400px;
+}
+
+#resizableDiv {
+
+}
+
+#resizableButton {
+
+  left: 52%;
+  font-size: 15px;
+}
